@@ -1,0 +1,352 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-color: #2B2B2B;
+	color: aliceblue;
+}
+
+.anim {
+	transition: transform 0.3s ease;
+}
+
+.anim:hover,
+.anim:focus {
+	transform: scale(0.95);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo a {
+	font-size: 32px;
+	font-weight: bold;
+	text-decoration: none;
+	color: aliceblue;
+	font-family: 'Space mono', sans-serif;
+	font-style: semi-bold;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.logo::before {
+	content: url('./img/logo.svg');
+	font-weight: 900;
+	position: relative;
+	bottom: -5px;
+	margin-left: 35px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	margin-right: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+nav li {
+	margin-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: aliceblue;
+	font-family: 'Work Sans', sans-serif;
+	font-style: semi-bold;
+	font-weight: 600;
+	font-style: normal;
+}
+
+nav .btn {
+	border: 1px solid #A259FF;
+	background-color: #A259FF;
+
+	border-radius: 20px;
+	padding: 20px 30px 20px;
+	gap: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: transform 0.3s ease;
+}
+
+.btn {
+	transition: transform 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+	transform: scale(0.9);
+}
+
+nav .btn::before {
+	content: url('./img/User.svg');
+	font-weight: 900;
+	position: relative;
+	scale: 1.5;
+}
+
+
+.create {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.create h1 {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 51px;
+}
+
+.create p {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.create-content {
+	display: flex;
+	flex-direction: column;
+	margin-left: 60px;
+	margin-top: 100px;
+}
+
+.create-content p {
+	margin-top: 20px;
+}
+
+.form input {
+	background: #FFFFFF;
+	border: 1px solid #858584;
+	border-radius: 30px;
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 16px 20px;
+	outline: none;
+	height: 24px;
+	font-size: 11px;
+	padding-left: 60px;
+	height: 60px;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 50px;
+}
+
+.item-1:before {
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('./img/User.svg') no-repeat center center;
+	filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg);
+	background-size: contain;
+	position: relative;
+	left: 20px;
+	bottom: -50px;
+}
+
+.item-2:before {
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('./img/email.svg') no-repeat center center;
+	filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg);
+	background-size: contain;
+	position: relative;
+	left: 20px;
+	bottom: -50px;
+}
+
+.item-3:before {
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('./img/LockKey.svg') no-repeat center center;
+	filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg);
+	background-size: contain;
+	position: relative;
+	left: 20px;
+	bottom: -50px;
+}
+
+.item-4:before {
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('./img/LockKey.svg') no-repeat center center;
+	filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg);
+	background-size: contain;
+	position: relative;
+	left: 20px;
+	bottom: -50px;
+}
+
+
+.create-acc {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.butn {
+	border: 1px solid #A259FF;
+	background-color: #A259FF;
+	border-radius: 30px;
+	outline: none;
+	height: 24px;
+	font-size: 11px;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	height: 60px;
+}
+
+
+footer {
+	background-color: #3B3B3B;
+	margin-top: 80px;
+}
+
+
+.footer-grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 100px;
+	padding-top: 50px;
+}
+
+
+footer input {
+	border: 1px solid #909090;
+	border-radius: 20px;
+	outline: none;
+	height: 24px;
+	font-size: 11px;
+	margin-top: 20px;
+	height: 60px;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 50px;
+	padding-left: 60px;
+}
+
+footer a {
+	border: 1px solid #A259FF;
+	background-color: #A259FF;
+	border-radius: 20px;
+	outline: none;
+	height: 24px;
+	font-size: 11px;
+	margin-top: 20px;
+	width: 200px;
+	position: relative;
+	left: 200px;
+	top: -80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	height: 60px;
+}
+
+
+footer h6 {
+	font-family: 'Space Mono', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+footer p {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #CCCCCC;
+	margin-top: 30px;
+}
+
+.footer-content-1 ul {
+	list-style: none;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #CCCCCC;
+	margin-top: 15px;
+	display: flex;
+	gap: 20px;
+	position: relative;
+	left: -40px;
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	position: relative;
+	border-top: 1px solid #909090;
+	max-width: 1050px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.footer-bottom p {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
